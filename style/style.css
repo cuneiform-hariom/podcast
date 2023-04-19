@@ -51,7 +51,6 @@ p {
   border-radius: 100px;
   font-weight: 500;
   font-size: 13px;
-  line-height: 28px;
   color: #061020;
 }
 
@@ -61,10 +60,29 @@ p {
   border-radius: 100px;
   background: linear-gradient(180deg, #01DAC1 0%, #009AD5 100%);
   box-shadow: 0px 0px 35px rgba(22, 12, 96, 0.09);
-  line-height: 28px;
   font-weight: 500;
   font-size: 13px;
   color: white;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .sec-title {
@@ -95,11 +113,19 @@ p {
   gap: 20px;
 }
 
-header.small {
-  height: 70px;
+.nav.small {
+  height: 65px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.nav.small .nav-container .nav-logo img {
+  width: 200px;
+}
+.nav.small .nav-container .login-btns .light-btn,
+.nav.small .nav-container .login-btns .dark-btn {
+  padding: 5px 30px;
 }
 
-header {
+.nav {
   position: fixed;
   top: 0;
   left: 0;
@@ -110,27 +136,27 @@ header {
   display: flex;
   align-items: center;
 }
-header .nav-container {
+.nav .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header .nav-container .nav-logo {
+.nav .nav-container .nav-logo img {
   width: 250px;
 }
-header .nav-container .nav-menu {
+.nav .nav-container .nav-menu {
   margin: 0;
   display: flex;
   gap: 30px;
 }
-header .nav-container .nav-menu .menu-link {
+.nav .nav-container .nav-menu .menu-link {
   color: #6D727C;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   position: relative;
 }
-header .nav-container .nav-menu .menu-link::after {
+.nav .nav-container .nav-menu .menu-link::after {
   content: "";
   position: absolute;
   width: 0;
@@ -141,24 +167,113 @@ header .nav-container .nav-menu .menu-link::after {
   transform: translateX(-50%);
   transition: width 0.3s linear;
 }
-header .nav-container .nav-menu .menu-link:hover {
+.nav .nav-container .nav-menu .menu-link:hover {
   color: #061020;
 }
-header .nav-container .nav-menu .menu-link:hover::after {
+.nav .nav-container .nav-menu .menu-link:hover::after {
   width: 80%;
 }
-header .nav-container .nav-menu .menu-link.active {
+.nav .nav-container .nav-menu .menu-link.active {
   color: #061020;
 }
-header .nav-container .nav-menu .menu-link.active::after {
+.nav .nav-container .nav-menu .menu-link.active::after {
   width: 80%;
 }
-header .nav-container .login-btns {
+.nav .nav-container .login-btns {
   display: flex;
-  gap: 35px;
+  gap: 15px;
 }
-header .nav-container .hamburger {
+.nav .nav-container .hamburger {
   display: none;
+}
+.nav .loginpopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #F6FBFE;
+  width: 55vw;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.076);
+  border-radius: 8px;
+  opacity: 0;
+  visibility: hidden;
+}
+.nav .loginpopup .leftform {
+  padding: 50px;
+}
+.nav .loginpopup .leftform .closeform {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 18px;
+  color: black;
+  border: none;
+  outline: none;
+}
+.nav .loginpopup .leftform h3 {
+  font-size: 30px;
+  font-weight: 700;
+}
+.nav .loginpopup .leftform .loginform {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.nav .loginpopup .leftform .loginform label {
+  color: #000;
+  font-size: 14px;
+}
+.nav .loginpopup .leftform .loginform input {
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 14px;
+  border: 1px solid #E6E6E6;
+  border-radius: 8px;
+  outline: none;
+}
+.nav .loginpopup .leftform .loginform .forgot {
+  display: block;
+  text-align: right;
+  font-size: 14px;
+}
+.nav .loginpopup .leftform .loginform .button-grp {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.nav .loginpopup .leftform .loginform .button-grp .login-btn,
+.nav .loginpopup .leftform .loginform .button-grp .google-btn {
+  padding: 14px 0;
+  border: none;
+}
+.nav .loginpopup .leftform .loginform .button-grp .login-btn {
+  background: linear-gradient(93.84deg, #009AD5 -1.16%, #01DAC1 104.45%);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  color: white;
+}
+.nav .loginpopup .leftform .loginform .button-grp .google-btn {
+  color: #000;
+  background: white;
+  border: 1px solid #E6E6E6;
+  border-radius: 8px;
+}
+.nav .loginpopup .leftform .loginform .button-grp .google-btn img {
+  width: 18px;
+}
+.nav .loginpopup .leftform p {
+  font-size: 14px;
+  margin-top: 15px;
+}
+.nav .loginpopup .leftform p a {
+  color: #000;
+  font-weight: 600;
+}
+.nav .loginpopup.open {
+  opacity: 1;
+  visibility: visible;
 }
 
 .home-banner {
@@ -178,7 +293,6 @@ header .nav-container .hamburger {
 }
 .home-banner .featBox .fetBadge {
   font-size: 11px;
-  line-height: 20px;
   color: white;
   background: #908DAB;
   border-radius: 15px;
@@ -225,10 +339,13 @@ header .nav-container .hamburger {
   border: 1px solid #061020;
   border-radius: 100px;
 }
+.home-banner .bannerrightimg {
+  width: 60%;
+  display: block;
+  margin: auto;
+}
 
 .latesteps .epgrid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 60px;
   padding: 30px 0;
 }
@@ -280,8 +397,6 @@ header .nav-container .hamburger {
 }
 
 .showgrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 60px;
   padding: 30px 0;
 }
@@ -322,8 +437,6 @@ header .nav-container .hamburger {
   padding: 30px 0;
 }
 .hostsection .hostgrid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
   padding: 20px 0;
   gap: 40px;
 }
@@ -356,8 +469,6 @@ header .nav-container .hamburger {
   color: #009AD5;
 }
 .besttopic .topicgrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
 .besttopic .topicgrid .topic-box {
@@ -394,8 +505,6 @@ header .nav-container .hamburger {
 }
 
 .testimonial .testimonialgrid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   padding: 30px 0;
 }
@@ -457,17 +566,21 @@ header .nav-container .hamburger {
   border: 1px solid #91A2AF;
   box-shadow: inset 0px 2px 1px rgba(0, 0, 0, 0.024);
   border-radius: 10px;
+  position: relative;
 }
 .newsletter .letterbox form input {
   border: none;
   outline: none;
-  width: 90%;
+  width: 100%;
+  padding-right: 30px;
 }
 .newsletter .letterbox form button {
   border: none;
   font-size: 18px;
   background: white;
-  float: right;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 footer {
@@ -507,27 +620,74 @@ footer .copyrightbar p a {
 }
 
 @media only screen and (max-width: 992px) {
-  .nav-container .login-btns {
+  .nav .nav-container .login-btns {
     display: none;
   }
 }
 @media (max-width: 768px) {
+  .grid-2, .grid-3, .grid-4 {
+    grid-template-columns: 1fr;
+  }
   .nav-container .nav-menu {
     position: absolute;
     display: flex;
     flex-direction: column;
     background-color: white;
-    top: 0;
-    left: 0;
+    top: 66px;
+    left: -100%;
     width: 100%;
   }
-  .nav-container .hamburger {
-    display: block;
+  .nav-container .nav-menu.active {
+    left: 0;
+    padding: 30px;
   }
-  .nav-container .hamburger span {
+  .nav .nav-container .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .nav .nav-container .hamburger span {
+    display: block;
     width: 25px;
     height: 2px;
     background: #061020;
     margin: 4px;
+  }
+  .nav .nav-container .hamburger.active span:nth-child(1) {
+    transform: translateY(3px) rotate(-45deg);
+  }
+  .nav .nav-container .hamburger.active span:nth-child(2) {
+    display: none;
+  }
+  .nav .nav-container .hamburger.active span:nth-child(3) {
+    transform: translateY(-3px) rotate(45deg);
+  }
+  .newsletter {
+    padding: 20px;
+  }
+  footer .copyrightbar {
+    flex-direction: column;
+  }
+}
+@media (max-width: 576px) {
+  .sliderTitlebox {
+    flex-direction: column;
+  }
+  .home-banner {
+    padding: 10px;
+    margin-top: 90px;
+  }
+  .home-banner h2 {
+    font-size: 36px;
+  }
+  .home-banner .featBox .listenbtns {
+    flex-direction: column;
+  }
+}
+@media (max-width: 300px) {
+  .nav .nav-container .nav-logo img {
+    width: 150px;
+  }
+  .nav.small .nav-container .nav-logo img {
+    width: 100px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -12,37 +12,96 @@
     <link rel="stylesheet" href="./style/style.css">
     <!-- fontawesome cdn  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 
 <body>
     <!-- header  -->
-    <header>
+    <header class="nav">
         <div class="container nav-container">
             <a href="index.html" class="nav-logo">
                 <img src="./assets/logo.svg" alt="">
             </a>
-            <ul class="nav-menu">
+            <ul class="nav-menu" id="menu">
                 <li><a href="index.html" class="menu-link active">Home</a></li>
                 <li><a href="upload-podcast.html" class="menu-link">Upload Podcast</a></li>
                 <li><a href="listen.html" class="menu-link">Listen</a></li>
                 <li><a href="about.html" class="menu-link">About us</a></li>
             </ul>
             <div class="login-btns">
-                <a href="#" class="light-btn">Log in</a>
-                <a href="#" class="color-btn">Sign Up</a>
+                <a href="#" class="light-btn" id="login-btn">Log in</a>
+                <a href="#" class="color-btn" id="signup-btn">Sign Up</a>
             </div>
-            <div class="hamburger">
+            <div class="hamburger" id="menuIcon">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
         </div>
+
+        <!-- -----------login popup----------- -->
+        <div class="loginpopup" id="login">
+            <div class="leftform">
+                <button class="closeform" id="closebtn">x</button>
+                <h3>Welcome back !! </h3>
+                <form class="loginform" action="">
+                    <div>
+                        <label for="email">Enter your email address</label>
+                        <input type="email" name="email" placeholder="jamie23@gmail.com">
+                    </div>
+                    <div>
+                        <label for="password">Enter your password</label>
+                        <input type="password" name="password">
+                        <a href="#" class="forgot text-right">Forgot password ?</a>
+                    </div>
+
+                    <div class="button-grp">
+                        <button type="submit" class="login-btn">Login</button>
+                        <button type="submit" class="google-btn"><img src="./assets/google.svg"> Log in with
+                            Google</button>
+                    </div>
+                </form>
+                <p class="text-center">Don’t have an account ? <a href="#">Sign up</a></p>
+            </div>
+            <img src="./assets/loginlady.svg" alt="">
+        </div>
+
+        <!-- ----------signup popup----------- -->
+        <div class="loginpopup" id="signup">
+            <div class="leftform">
+                <button class="closeform" id="closesignup">x</button>
+                <h3>Create an account </h3>
+                <form class="loginform" action="">
+                    <div>
+                        <label for="name">Enter your name</label>
+                        <input type="text" name="name">
+                    </div>
+                    <div>
+                        <label for="email">Enter your email address</label>
+                        <input type="email" name="email">
+                    </div>
+                    <div>
+                        <label for="password">Enter your password</label>
+                        <input type="password" name="password">
+                    </div>
+
+                    <div class="button-grp">
+                        <button type="submit" class="login-btn">Create Account</button>
+                        <button type="submit" class="google-btn"><img src="./assets/google.svg"> Sign up with
+                            Google</button>
+                    </div>
+                </form>
+                <p class="text-center">Already have an account ? <a href="#">Log in</a></p>
+            </div>
+            <img src="./assets/signuplady.svg" alt="">
+        </div>
+
     </header>
 
     <section class="home-banner">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-6 homeBannerLeft">
+                <div class="col-lg-6 col-md-6 col-12 homeBannerLeft">
                     <h2>Connect to Your Audience</h2>
                     <p>Interacting with your audience creating new relationships, nurturing existing ones, and
                         responding to
@@ -67,8 +126,8 @@
 
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <img src="./assets/banner1.png" alt="">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <img src="./assets/banner1.svg" alt="" class="bannerrightimg">
                 </div>
             </div>
         </div>
@@ -85,7 +144,7 @@
                 <a href="" class="next"><i class="fa-regular fa-circle-right"></i></a>
             </div>
         </div>
-        <div class="epgrid">
+        <div class="epgrid grid-3">
             <div class="singleep">
                 <div class="imgbox">
                     <img src="./assets/ep1.svg" alt="">
@@ -127,7 +186,7 @@
                 <a href="" class="next"><i class="fa-regular fa-circle-right"></i></a>
             </div>
         </div>
-        <div class="showgrid">
+        <div class="showgrid grid-2">
             <div class="singleshow">
                 <img src="./assets/show1.svg" alt="">
                 <div class="showdesc">
@@ -209,7 +268,7 @@
                 </div>
             </div>
 
-            <div class="hostgrid">
+            <div class="hostgrid grid-4">
                 <div class="singlehost">
                     <img src="./assets/host1.svg" alt="" class="hostimg">
                     <h4 class="hostname text-center">Brian Doe</h4>
@@ -242,51 +301,53 @@
         </div>
     </section>
 
-    <section class="besttopic container">
-        <div class="row">
-            <div class="col-lg-6">
-                <img src="./assets/banner2.svg" alt="">
-            </div>
-            <div class="col-lg-6">
-                <h2>Presenting The Best Topic For You</h2>
-                <div class="topicgrid ">
-                    <div class="lefttopic">
-                        <div class="topic-box mt-5">
-                            <div class="topictitle">
-                                <img src="./assets/edu.svg" alt="">
-                                <h3 class="light">Education</h3>
+    <section class="besttopic">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="./assets/banner2.svg" alt="">
+                </div>
+                <div class="col-lg-6">
+                    <h2>Presenting The Best Topic For You</h2>
+                    <div class="topicgrid grid-2">
+                        <div class="lefttopic">
+                            <div class="topic-box mt-5">
+                                <div class="topictitle">
+                                    <img src="./assets/edu.svg" alt="">
+                                    <h3 class="light">Education</h3>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.</p>
+                                <a href="#" class="grad">Read More <i class="fa-solid fa-arrow-right"></i></a>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.</p>
-                            <a href="#" class="grad">Read More <i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                        <div class="topic-box mt-4">
-                            <div class="topictitle">
-                                <img src="./assets/music.svg" alt="">
-                                <h3 class="dark">Music & Movie</h3>
+                            <div class="topic-box mt-4">
+                                <div class="topictitle">
+                                    <img src="./assets/music.svg" alt="">
+                                    <h3 class="dark">Music & Movie</h3>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.</p>
+                                <a href="#" class="grad">Read More <i class="fa-solid fa-arrow-right"></i></a>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.</p>
-                            <a href="#" class="grad">Read More <i class="fa-solid fa-arrow-right"></i></a>
                         </div>
-                    </div>
-                    <div class="righttopic">
-                        <div class="topic-box">
-                            <div class="topictitle">
-                                <img src="./assets/health.svg" alt="">
-                                <h3 class="dark">Health</h3>
+                        <div class="righttopic">
+                            <div class="topic-box">
+                                <div class="topictitle">
+                                    <img src="./assets/health.svg" alt="">
+                                    <h3 class="dark">Health</h3>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.</p>
+                                <a href="#" class="grad">Read More <i class="fa-solid fa-arrow-right"></i></a>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.</p>
-                            <a href="#" class="grad">Read More <i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                        <div class="topic-box mt-4">
-                            <div class="topictitle">
-                                <img src="./assets/comedy.svg" alt="">
-                                <h3 class="light">Comedy</h3>
+                            <div class="topic-box mt-4">
+                                <div class="topictitle">
+                                    <img src="./assets/comedy.svg" alt="">
+                                    <h3 class="light">Comedy</h3>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.</p>
+                                <a href="#" class="grad">Read More <i class="fa-solid fa-arrow-right"></i></a>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.</p>
-                            <a href="#" class="grad">Read More <i class="fa-solid fa-arrow-right"></i></a>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
             </div>
         </div>
@@ -304,7 +365,7 @@
                 <a href="" class="next"><i class="fa-regular fa-circle-right"></i></a>
             </div>
         </div>
-        <div class="testimonialgrid">
+        <div class="testimonialgrid grid-3">
             <div class="singletestimonial">
                 <div class="revstar">
                     <i class="fa-solid fa-star"></i>
@@ -424,9 +485,13 @@
 
 
 
-
     <!-- bootstrap js  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- script  -->
+    <script src="./script/script.js"></script>
+
+
 </body>
 
 </html>
