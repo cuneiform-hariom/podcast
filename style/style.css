@@ -186,95 +186,6 @@ p {
 .nav .nav-container .hamburger {
   display: none;
 }
-.nav .loginpopup {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background: #F6FBFE;
-  width: 55vw;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.076);
-  border-radius: 8px;
-  opacity: 0;
-  visibility: hidden;
-}
-.nav .loginpopup .leftform {
-  padding: 50px;
-}
-.nav .loginpopup .leftform .closeform {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 18px;
-  color: black;
-  border: none;
-  outline: none;
-}
-.nav .loginpopup .leftform h3 {
-  font-size: 30px;
-  font-weight: 700;
-}
-.nav .loginpopup .leftform .loginform {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.nav .loginpopup .leftform .loginform label {
-  color: #000;
-  font-size: 14px;
-}
-.nav .loginpopup .leftform .loginform input {
-  width: 100%;
-  padding: 5px 10px;
-  font-size: 14px;
-  border: 1px solid #E6E6E6;
-  border-radius: 8px;
-  outline: none;
-}
-.nav .loginpopup .leftform .loginform .forgot {
-  display: block;
-  text-align: right;
-  font-size: 14px;
-}
-.nav .loginpopup .leftform .loginform .button-grp {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.nav .loginpopup .leftform .loginform .button-grp .login-btn,
-.nav .loginpopup .leftform .loginform .button-grp .google-btn {
-  padding: 14px 0;
-  border: none;
-}
-.nav .loginpopup .leftform .loginform .button-grp .login-btn {
-  background: linear-gradient(93.84deg, #009AD5 -1.16%, #01DAC1 104.45%);
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
-  color: white;
-}
-.nav .loginpopup .leftform .loginform .button-grp .google-btn {
-  color: #000;
-  background: white;
-  border: 1px solid #E6E6E6;
-  border-radius: 8px;
-}
-.nav .loginpopup .leftform .loginform .button-grp .google-btn img {
-  width: 18px;
-}
-.nav .loginpopup .leftform p {
-  font-size: 14px;
-  margin-top: 15px;
-}
-.nav .loginpopup .leftform p a {
-  color: #000;
-  font-weight: 600;
-}
-.nav .loginpopup.open {
-  opacity: 1;
-  visibility: visible;
-}
 
 .home-banner {
   padding: 36px 0 0 110px;
@@ -617,6 +528,78 @@ footer .copyrightbar {
 footer .copyrightbar p a {
   color: #009AD5;
   margin-left: 5px;
+}
+
+.loginpage .leftform {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.loginpage .leftform h3 {
+  font-size: 30px;
+  font-weight: 700;
+}
+.loginpage .leftform .loginform {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.loginpage .leftform .loginform label {
+  color: #000;
+  font-size: 14px;
+}
+.loginpage .leftform .loginform input {
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 14px;
+  border: 1px solid #E6E6E6;
+  border-radius: 8px;
+  outline: none;
+}
+.loginpage .leftform .loginform .forgot {
+  display: block;
+  text-align: right;
+  font-size: 14px;
+}
+.loginpage .leftform .loginform .button-grp {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.loginpage .leftform .loginform .button-grp .login-btn,
+.loginpage .leftform .loginform .button-grp .google-btn {
+  padding: 14px 0;
+  border: none;
+}
+.loginpage .leftform .loginform .button-grp .login-btn {
+  background: linear-gradient(93.84deg, #009AD5 -1.16%, #01DAC1 104.45%);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  color: white;
+}
+.loginpage .leftform .loginform .button-grp .google-btn {
+  color: #000;
+  background: white;
+  border: 1px solid #E6E6E6;
+  border-radius: 8px;
+}
+.loginpage .leftform .loginform .button-grp .google-btn img {
+  width: 18px;
+}
+.loginpage .leftform p {
+  font-size: 14px;
+  margin-top: 15px;
+}
+.loginpage .leftform p a {
+  color: #000;
+  font-weight: 600;
+}
+.loginpage .right-img {
+  display: flex;
+}
+.loginpage .right-img img {
+  height: 100vh;
 }
 
 @media only screen and (max-width: 992px) {
