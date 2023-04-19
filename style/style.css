@@ -91,6 +91,11 @@ p {
   color: #009AD5;
 }
 
+.sec-title-2 {
+  color: #3E3E3E;
+  font-size: 36px;
+}
+
 .sec-btn {
   font-weight: 500;
   font-size: 16px;
@@ -111,6 +116,10 @@ p {
 .sliderTitlebox .right {
   display: flex;
   gap: 20px;
+}
+
+.sec-1 {
+  margin-top: 90px;
 }
 
 .nav.small {
@@ -183,13 +192,28 @@ p {
   display: flex;
   gap: 15px;
 }
+.nav .nav-container .logged-in {
+  padding: 8px 10px;
+  border: 1px solid #01DAC1;
+  border-radius: 150px;
+  display: flex;
+  align-items: center;
+}
+.nav .nav-container .logged-in .loguserimg img {
+  width: 30px;
+  border-radius: 50%;
+  border: 2px solid #009AD5;
+}
+.nav .nav-container .logged-in .loguserinfo h6 {
+  margin-bottom: 0;
+  margin-left: 6px;
+}
 .nav .nav-container .hamburger {
   display: none;
 }
 
 .home-banner {
   padding: 36px 0 0 110px;
-  margin-top: 90px;
 }
 .home-banner h2 {
   font-size: 70px;
@@ -602,13 +626,102 @@ footer .copyrightbar p a {
   height: 100vh;
 }
 
+.page-search-form {
+  margin: 10px 0;
+  position: relative;
+  border: 1px solid #01B7CC;
+  border-radius: 15px;
+  display: inline-block;
+  width: 50%;
+  padding: 5px;
+}
+.page-search-form i {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+.page-search-form input {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 5px 5px 5px 35px;
+}
+
+.weekpodcast {
+  gap: 25px;
+  padding: 0px 0 60px 0;
+}
+.weekpodcast .singlepod {
+  padding: 15px;
+  border: 1px solid #01B7CC;
+  border-radius: 8px;
+}
+.weekpodcast .singlepod .poddescBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.weekpodcast .singlepod .poddescBox .poddesc {
+  padding-top: 10px;
+}
+.weekpodcast .singlepod .poddescBox .poddesc h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.weekpodcast .singlepod .poddescBox .poddesc p {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+.weekpodcast .singlepod .poddescBox .podbtn {
+  border: 1px solid #009AD5;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+.weekpodcast .singlepod .poddescBox .podbtn i {
+  color: #009AD5;
+  transform: rotate(-45deg);
+}
+
+.likedhost {
+  gap: 25px;
+  padding-bottom: 60px;
+}
+.likedhost .singlelikedhost {
+  position: relative;
+}
+.likedhost .singlelikedhost .hostdetail {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.8);
+}
+.likedhost .singlelikedhost .hostdetail h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.likedhost .singlelikedhost .hostdetail p {
+  font-size: 16px;
+  margin-bottom: 0;
+  color: #000;
+  font-weight: 500;
+}
+
 @media only screen and (max-width: 992px) {
   .nav .nav-container .login-btns {
     display: none;
   }
 }
 @media (max-width: 768px) {
-  .grid-2, .grid-3, .grid-4 {
+  .grid-2,
+  .grid-3,
+  .grid-4 {
     grid-template-columns: 1fr;
   }
   .nav-container .nav-menu {
@@ -619,6 +732,13 @@ footer .copyrightbar p a {
     top: 66px;
     left: -100%;
     width: 100%;
+  }
+  .nav .nav-container .logged-in {
+    border: none;
+    padding: 0;
+  }
+  .nav .nav-container .logged-in .loguserinfo h6 {
+    display: none;
   }
   .nav-container .nav-menu.active {
     left: 0;

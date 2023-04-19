@@ -13,37 +13,37 @@ function scrollValue() {
 
 // -------login popup
 
-loginBtn = document.getElementById('login-btn');
-loginForm = document.getElementById('login');
-closeBtn = document.getElementById('closebtn');
-SignupBtn = document.getElementById('signup-btn');
-SignupForm = document.getElementById('signup');
-closeSignupBtn = document.getElementById('closesignup');
+// loginBtn = document.getElementById('login-btn');
+// loginForm = document.getElementById('login');
+// closeBtn = document.getElementById('closebtn');
+// SignupBtn = document.getElementById('signup-btn');
+// SignupForm = document.getElementById('signup');
+// closeSignupBtn = document.getElementById('closesignup');
 
 
-loginBtn.addEventListener("click", openlogin);
+// loginBtn.addEventListener("click", openlogin);
 
-function openlogin() {
-  loginForm.classList.add("open");
-}
+// function openlogin() {
+//   loginForm.classList.add("open");
+// }
 
-closeBtn.addEventListener("click", close);
+// closeBtn.addEventListener("click", close);
 
-function close() {
-  loginForm.classList.remove("open");
-}
+// function close() {
+//   loginForm.classList.remove("open");
+// }
 
-SignupBtn.addEventListener("click", opensignup);
+// SignupBtn.addEventListener("click", opensignup);
 
-function opensignup() {
-  SignupForm.classList.add("open");
-}
+// function opensignup() {
+//   SignupForm.classList.add("open");
+// }
 
-closeSignupBtn.addEventListener("click", closesignup);
+// closeSignupBtn.addEventListener("click", closesignup);
 
-function closesignup() {
-  SignupForm.classList.remove("open");
-}
+// function closesignup() {
+//   SignupForm.classList.remove("open");
+// }
 
 
 // responsive menu 

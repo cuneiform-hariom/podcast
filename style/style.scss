@@ -102,6 +102,11 @@ p {
     color: #009AD5;
 }
 
+.sec-title-2{
+    color: #3E3E3E;
+    font-size: 36px;
+}
+
 .sec-btn {
     font-weight: 500;
     font-size: 16px;
@@ -126,6 +131,10 @@ p {
         display: flex;
         gap: 20px;
     }
+}
+
+.sec-1 {
+    margin-top: 90px;
 }
 
 // header =========================================================
@@ -220,6 +229,31 @@ p {
 
         }
 
+        .logged-in {
+            padding: 8px 10px;
+            border: 1px solid #01DAC1;
+            border-radius: 150px;
+            display: flex;
+            align-items: center;
+            // gap: 6px;
+
+            .loguserimg {
+                img {
+                    width: 30px;
+                    border-radius: 50%;
+                    border: 2px solid #009AD5;
+                }
+            }
+
+            .loguserinfo {
+
+                h6 {
+                    margin-bottom: 0;
+                    margin-left: 6px;
+                }
+            }
+        }
+
         .hamburger {
             display: none;
         }
@@ -231,7 +265,6 @@ p {
 
 .home-banner {
     padding: 36px 0 0 110px;
-    margin-top: 90px;
 
     h2 {
         font-size: 70px;
@@ -665,7 +698,7 @@ footer {
 
 
 
-// login page styling=======================
+// login/signup page styling=======================
 
 .loginpage {
 
@@ -751,11 +784,133 @@ footer {
     .right-img {
         display: flex;
 
-        img{
+        img {
             height: 100vh;
         }
     }
 }
+
+// browse podcast page styling ====================
+
+.page-search-form {
+    margin: 10px 0;
+    position: relative;
+    border: 1px solid #01B7CC;
+    border-radius: 15px;
+    display: inline-block;
+    width: 50%;
+    padding: 5px;
+
+    i {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+    }
+
+    input {
+        border: none;
+        outline: none;
+        width: 100%;
+        padding: 5px 5px 5px 35px;
+    }
+
+}
+
+.weekpodcast {
+    gap: 25px;
+    padding: 0px 0 60px 0;
+
+    .singlepod {
+        padding: 15px;
+        border: 1px solid #01B7CC;
+        border-radius: 8px;
+
+        .poddescBox {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .poddesc {
+                padding-top: 10px;
+
+
+                h3 {
+                    font-size: 24px;
+                    font-weight: 500;
+                    margin-bottom: 0;
+                }
+
+                p {
+                    font-size: 16px;
+                    margin-bottom: 0;
+                }
+            }
+
+            .podbtn {
+                border: 1px solid #009AD5;
+                width: 30px;
+                height: 30px;
+                border-radius: 5px;
+                display: grid;
+                place-content: center;
+                cursor: pointer;
+
+                i{
+                    color: #009AD5;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+
+}
+
+.likedhost{
+    gap: 25px;
+    padding-bottom: 60px;
+    
+    .singlelikedhost{
+        position: relative;
+
+        .hostdetail{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.8);
+    
+            h3{
+                font-size: 24px;
+                font-weight: 500;
+                margin-bottom: 0;
+            }
+    
+            p{
+                font-size: 16px;
+                margin-bottom: 0;
+                color: #000;
+                font-weight: 500;
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // ----------------responsive css------------------
@@ -769,7 +924,9 @@ footer {
 
 @media (max-width: 768px) {
 
-    .grid-2,.grid-3,.grid-4{
+    .grid-2,
+    .grid-3,
+    .grid-4 {
         grid-template-columns: 1fr;
     }
 
@@ -783,6 +940,15 @@ footer {
         width: 100%;
     }
 
+    .nav .nav-container .logged-in{
+        
+        border: none;
+        padding: 0;
+        
+        .loguserinfo h6{
+            display: none;
+        }
+    } 
     .nav-container .nav-menu.active {
         left: 0;
         padding: 30px;
@@ -817,11 +983,11 @@ footer {
 
     }
 
-    .newsletter{
+    .newsletter {
         padding: 20px;
     }
 
-    footer .copyrightbar{
+    footer .copyrightbar {
         flex-direction: column;
     }
 
@@ -833,7 +999,7 @@ footer {
 
 @media (max-width: 576px) {
 
-    .sliderTitlebox{
+    .sliderTitlebox {
         flex-direction: column;
     }
 
@@ -841,22 +1007,23 @@ footer {
         padding: 10px;
         margin-top: 90px;
 
-        h2{
+        h2 {
             font-size: 36px;
         }
 
-        .featBox .listenbtns{
+        .featBox .listenbtns {
             flex-direction: column;
         }
     }
 
-    
+
 }
 
 @media (max-width: 300px) {
-    .nav .nav-container .nav-logo img{
+    .nav .nav-container .nav-logo img {
         width: 150px;
     }
+
     .nav.small .nav-container .nav-logo img {
         width: 100px;
     }
