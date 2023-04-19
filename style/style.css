@@ -531,7 +531,7 @@ footer .copyrightbar p a {
 }
 
 .loginpage .leftform {
-  padding: 50px;
+  padding: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
