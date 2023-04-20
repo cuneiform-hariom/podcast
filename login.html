@@ -17,36 +17,38 @@
 
 <body style="background: #F6FBFE;">
     <div class="loginpage grid-2">
-            <div class="leftform">
-                <h3>Welcome back !! </h3>
-                <form class="loginform" action="">
-                    <div>
-                        <label for="email">Enter your email address</label>
-                        <input type="email" name="email" placeholder="jamie23@gmail.com">
-                    </div>
-                    <div>
-                        <label for="password">Enter your password</label>
-                        <input type="password" name="password">
-                        <a href="#" class="forgot text-right">Forgot password ?</a>
-                    </div>
-    
-                    <div class="button-grp">
-                        <button type="submit" class="login-btn">Login</button>
-                        <button type="submit" class="google-btn"><img src="./assets/google.svg"> Log in with
-                            Google</button>
-                    </div>
-                </form>
-                <p class="text-center">Don’t have an account ? <a href="./signup.html">Sign up</a></p>
-            </div>
-            <div class="right-img">
-                <img src="./assets/loginlady.png" alt="">
-            </div> 
+        <div class="leftform">
+            <h3>Welcome back !! </h3>
+            <form class="loginform" action="">
+                <div>
+                    <label for="email">Enter your email address</label>
+                    <input type="email" name="email" placeholder="jamie23@gmail.com">
+                </div>
+                <div>
+                    <label for="password">Enter your password</label>
+                    <input type="password" name="password" id="passwordfield">
+                    <span toggle="#password-toggle" class="fa fa-fw fa-eye field-icon eyeIcon"></span>
+                    <a href="#" class="forgot text-right">Forgot password ?</a>
+                </div>
+
+                <div class="button-grp">
+                    <button type="submit" class="login-btn">Login</button>
+                    <button type="submit" class="google-btn"><img src="./assets/google.svg"> Log in with
+                        Google</button>
+                </div>
+            </form>
+            <p class="text-center">Don’t have an account ? <a href="./signup.html">Sign up</a></p>
+        </div>
+        <div class="right-img">
+            <img src="./assets/loginlady.png" alt="">
         </div>
     </div>
-    
+    </div>
 
 
-    
+
+
+
     <!-- bootstrap js  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 

@@ -76,6 +76,15 @@ p {
     color: white;
 }
 
+.main-btn{
+    padding: 10px 30px;
+    border: 0px solid;
+    background: linear-gradient(180deg, #01DAC1 0%, #009AD5 100%);
+    outline: none;
+    color: white;
+    border-radius: 8px;
+}
+
 .grid-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -102,7 +111,7 @@ p {
     color: #009AD5;
 }
 
-.sec-title-2{
+.sec-title-2 {
     color: #3E3E3E;
     font-size: 36px;
 }
@@ -732,6 +741,20 @@ footer {
                 outline: none;
             }
 
+            .eyeIcon {
+                float: right;
+                margin-top: -24px;
+                position: relative;
+                margin-right: 5px;
+                color: #a8a8a8;
+                font-size: 14px;
+                cursor: pointer;
+            }
+
+            input[type=password] {
+                padding-right: 30px;
+            }
+
             .forgot {
                 display: block;
                 text-align: right;
@@ -855,7 +878,7 @@ footer {
                 place-content: center;
                 cursor: pointer;
 
-                i{
+                i {
                     color: #009AD5;
                     transform: rotate(-45deg);
                 }
@@ -865,27 +888,27 @@ footer {
 
 }
 
-.likedhost{
+.likedhost {
     gap: 25px;
     padding-bottom: 60px;
-    
-    .singlelikedhost{
+
+    .singlelikedhost {
         position: relative;
 
-        .hostdetail{
+        .hostdetail {
             position: absolute;
             bottom: 0;
             width: 100%;
             padding: 10px;
             background: rgba(255, 255, 255, 0.8);
-    
-            h3{
+
+            h3 {
                 font-size: 24px;
                 font-weight: 500;
                 margin-bottom: 0;
             }
-    
-            p{
+
+            p {
                 font-size: 16px;
                 margin-bottom: 0;
                 color: #000;
@@ -897,7 +920,82 @@ footer {
 }
 
 
+// profile page 
 
+.userbanner {
+
+    .userimage {
+        width: 150px;
+        margin-top: -75px;
+    }
+}
+
+.userdata {
+
+    form {
+        .formfields {
+            padding-top: 20px;
+            padding-right: 80px;
+            column-gap: 100px;
+            row-gap: 20px;
+
+
+            .field {
+
+                label {
+                    font-size: 18px;
+                    color: #0092D5;
+                    text-transform: capitalize;
+                }
+
+                .inp{
+                    position: relative;
+                    border: 1px solid #009AD5;
+                    border-radius: 8px;
+
+                    .edit-icon{
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                    }
+
+                    input,textarea{
+                        width: 100%;
+                        padding: 6px;
+                        padding-right: 60px;
+                        border: none;
+                        outline: none;
+                        border-radius: 8px;
+                    }
+                    textarea{
+                        resize: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.stickybar.sticky-top {
+    top: 60px;
+}
+
+.stickybar{
+    padding: 20px;
+    padding-bottom: 500px;
+
+    .pagenav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        li a{
+            font-size: 24px;
+            font-weight: 500;
+            color: #0092D5;
+        }
+    }
+}
 
 
 
@@ -940,15 +1038,16 @@ footer {
         width: 100%;
     }
 
-    .nav .nav-container .logged-in{
-        
+    .nav .nav-container .logged-in {
+
         border: none;
         padding: 0;
-        
-        .loguserinfo h6{
+
+        .loguserinfo h6 {
             display: none;
         }
-    } 
+    }
+
     .nav-container .nav-menu.active {
         left: 0;
         padding: 30px;

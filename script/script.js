@@ -1,50 +1,29 @@
+// // password toggle 
+
+// let eyeIcon = document.getElementById('password-toggle');
+// let password = document.getElementById('passwordfield');
+
+// eyeIcon.addEventListener("click", passwordtoggle);
+
+// function passwordtoggle() {
+//   if (password.type === "password") {
+//     password.type = "text";
+//   } else {
+//     password.type = "password";
+//   }
+// }
+
 function scrollValue() {
-    var navbar = document.querySelector('.nav');
-    var scroll = window.scrollY;
-    if (scroll < 50) {
-      navbar.classList.remove('small');
-    } else {
-      navbar.classList.add('small');
-    }
+  var navbar = document.querySelector('.nav');
+  var scroll = window.scrollY;
+  if (scroll < 50) {
+    navbar.classList.remove('small');
+  } else {
+    navbar.classList.add('small');
   }
-  
-  window.addEventListener('scroll', scrollValue);
-  
+}
 
-// -------login popup
-
-// loginBtn = document.getElementById('login-btn');
-// loginForm = document.getElementById('login');
-// closeBtn = document.getElementById('closebtn');
-// SignupBtn = document.getElementById('signup-btn');
-// SignupForm = document.getElementById('signup');
-// closeSignupBtn = document.getElementById('closesignup');
-
-
-// loginBtn.addEventListener("click", openlogin);
-
-// function openlogin() {
-//   loginForm.classList.add("open");
-// }
-
-// closeBtn.addEventListener("click", close);
-
-// function close() {
-//   loginForm.classList.remove("open");
-// }
-
-// SignupBtn.addEventListener("click", opensignup);
-
-// function opensignup() {
-//   SignupForm.classList.add("open");
-// }
-
-// closeSignupBtn.addEventListener("click", closesignup);
-
-// function closesignup() {
-//   SignupForm.classList.remove("open");
-// }
-
+window.addEventListener('scroll', scrollValue);
 
 // responsive menu 
 
@@ -57,3 +36,4 @@ function openmenu() {
   Menu.classList.toggle("active");
   Hamburger.classList.toggle("active");
 }
+
