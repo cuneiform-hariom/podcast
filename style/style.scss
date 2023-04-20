@@ -33,7 +33,7 @@ a {
 
 p {
     font-weight: 300;
-    font-size: 18px;
+    font-size: 16px;
     color: #6D737C;
 }
 
@@ -76,13 +76,19 @@ p {
     color: white;
 }
 
-.main-btn{
+.main-btn {
     padding: 10px 30px;
     border: 0px solid;
     background: linear-gradient(180deg, #01DAC1 0%, #009AD5 100%);
     outline: none;
     color: white;
     border-radius: 8px;
+    cursor: pointer;
+
+    i {
+        transform: rotate(-45deg);
+        margin-left: 5px;
+    }
 }
 
 .grid-2 {
@@ -948,18 +954,19 @@ footer {
                     text-transform: capitalize;
                 }
 
-                .inp{
+                .inp {
                     position: relative;
                     border: 1px solid #009AD5;
                     border-radius: 8px;
 
-                    .edit-icon{
+                    .edit-icon {
                         position: absolute;
                         top: 10px;
                         right: 10px;
                     }
 
-                    input,textarea{
+                    input,
+                    textarea {
                         width: 100%;
                         padding: 6px;
                         padding-right: 60px;
@@ -967,7 +974,8 @@ footer {
                         outline: none;
                         border-radius: 8px;
                     }
-                    textarea{
+
+                    textarea {
                         resize: none;
                     }
                 }
@@ -980,16 +988,16 @@ footer {
     top: 60px;
 }
 
-.stickybar{
-    padding: 20px;
-    padding-bottom: 500px;
+.stickybar {
+    padding-top: 10px;
+    background: white;
 
-    .pagenav{
+    .pagenav {
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-        li a{
+        li a {
             font-size: 24px;
             font-weight: 500;
             color: #0092D5;
@@ -997,9 +1005,132 @@ footer {
     }
 }
 
+.uploadpodcast {
+    gap: 50px;
+    align-items: center;
+
+    .podthumb {
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+
+    .uploaddesc {
+        h3 {
+            font-weight: 700;
+            font-size: 34px;
+            color: #000;
+
+            span {
+                color: #01DAC1;
+            }
+        }
+    }
+}
+
+.uploadpodcast,
+.mypodcast {
+    padding-top: 180px;
+}
+
+.playlistitems{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 50px;
+}
+
+.playlist {
+    display: flex;
+    padding: 20px 15px;
+    align-items: center;
+    border-radius: 8px;
+    border-width: 1px;
+
+    .playlistimg {
+        width: 140px;
+        height: 140px;
+        margin-right: 50px;
+    }
+
+    .listdesc {
+        padding-right: 15%;
 
 
+        h3 {
+            font-weight: 500;
+            font-size: 22px;
+            color: #009AD5;
+        }
 
+        .epdata {
+            display: flex;
+            gap: 20px;
+            padding: 0;
+            align-items: center;
+            margin: 0;
+
+            i {
+                color: #009aD5;
+                margin-right: 5px;
+            }
+
+            span {
+                font-weight: 400;
+                font-size: 16px;
+                color: #6D727C;
+            }
+
+            .listen {
+                font-size: 13px;
+                color: #6D727C;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                i {
+                    font-size: 30px;
+                    background: linear-gradient(180deg, #01DAC1 0%, #009AD5 100%);
+                    background-clip: text;
+                    color: transparent;
+                }
+
+            }
+
+            .fa-heart{
+                color: red;
+            }
+        }
+
+
+    }
+
+    .rightbtngrp{
+        display: flex;
+        flex-direction: column;
+        gap: 90px;
+        align-items: center;
+        opacity: 0;
+        visibility: hidden;
+
+        i{
+            color: #009AD5;
+            cursor: pointer;
+        }
+    }
+
+    &:hover{
+        background: rgba(0, 154, 213, 0.1);
+        border-width: 1px;
+        border-color: #01B7CC;
+        
+
+        .rightbtngrp{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
 
 
 
