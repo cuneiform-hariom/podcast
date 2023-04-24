@@ -211,19 +211,20 @@ p {
   display: flex;
   gap: 15px;
 }
-.nav .nav-container .logged-in {
+.nav .nav-container .logged-in button {
   padding: 8px 10px;
   border: 1px solid #01DAC1;
   border-radius: 150px;
   display: flex;
   align-items: center;
+  background: white;
 }
-.nav .nav-container .logged-in .loguserimg img {
+.nav .nav-container .logged-in button .loguserimg img {
   width: 30px;
   border-radius: 50%;
   border: 2px solid #009AD5;
 }
-.nav .nav-container .logged-in .loguserinfo h6 {
+.nav .nav-container .logged-in button .loguserinfo h6 {
   margin-bottom: 0;
   margin-left: 6px;
 }
@@ -233,11 +234,18 @@ p {
 
 .home-banner {
   padding: 36px 0 0 110px;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+.home-banner .row {
+  align-items: center;
 }
 .home-banner h2 {
   font-size: 70px;
   font-weight: 700;
   color: #061020;
+  margin-top: 60px;
 }
 .home-banner .featBox {
   background: linear-gradient(129.06deg, rgba(255, 0, 146, 0.2) -41.47%, rgba(255, 255, 255, 0.2) 24.83%, rgba(255, 255, 255, 0.2) 59.91%, rgba(1, 218, 193, 0.2) 111.39%), #FFFFFF;
@@ -921,6 +929,9 @@ footer .copyrightbar p a {
   .nav .nav-container .login-btns {
     display: none;
   }
+  .home-banner h2 {
+    font-size: 40px;
+  }
 }
 @media (max-width: 768px) {
   .grid-2,
@@ -970,6 +981,9 @@ footer .copyrightbar p a {
   }
   .newsletter {
     padding: 20px;
+  }
+  .home-banner {
+    height: auto;
   }
   footer .copyrightbar {
     flex-direction: column;
