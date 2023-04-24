@@ -1,13 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap");
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
 html,
 body {
   font-family: "Rubik", sans-serif;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 li {
@@ -576,6 +580,7 @@ footer .copyrightbar p a {
   justify-content: center;
   max-width: 600px;
   margin: auto;
+  height: 100vh;
 }
 .loginpage .leftform h3 {
   font-size: 30px;
@@ -969,6 +974,13 @@ footer .copyrightbar p a {
   }
   footer .copyrightbar {
     flex-direction: column;
+  }
+  .loginpage {
+    display: grid;
+    place-content: center;
+  }
+  .loginpage .leftform {
+    padding: 0 50px;
   }
   .loginpage .right-img {
     display: none;

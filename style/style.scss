@@ -1,10 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-    // transition: all 0.3s linear;
 }
 
 // variables==============================
@@ -17,6 +14,12 @@ $sky: #01B7CC;
 html,
 body {
     font-family: 'Rubik', sans-serif;
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
 }
 
 li {
@@ -726,6 +729,7 @@ footer {
         justify-content: center;
         max-width: 600px;
         margin: auto;
+        height: 100vh;
 
         h3 {
             font-size: 30px;
@@ -1249,12 +1253,18 @@ footer {
 
     // login page 
 
-    .loginpage .right-img{
-        display: none;
+    .loginpage{
+        display: grid;
+        place-content: center;
+
+        .leftform{
+            padding: 0 50px;
+        }
+
+        .right-img{
+            display: none;
+        }
     }
-
-
-
 }
 
 

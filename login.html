@@ -13,36 +13,40 @@
     <!-- fontawesome cdn  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- google icons  -->
-    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet">
 
 </head>
 
 <body style="background: #F6FBFE;">
     <div class="loginpage grid-2">
-        <div class="leftform">
-            <h3>Welcome back !! </h3>
-            <form class="loginform" action="">
-                <div>
-                    <label for="email">Enter your email address</label>
-                    <input type="email" name="email" placeholder="jamie23@gmail.com" required>
-                    <span class="error">email not valid</span>
-                </div>
-                <div>
-                    <label for="password">Enter your password</label>
-                    <input type="password" name="password" id="passwordfield">
-                    <span class="material-icons-outlined eyeIcon">
-                        remove_red_eye
-                    </span>
-                    <a href="./forgotpassword.html" class="forgot text-right">Forgot password ?</a>
-                </div>
+        <div class="formcontainer">
+            <div class="leftform">
+                <h3>Welcome back !! </h3>
+                <form class="loginform" action="">
+                    <div>
+                        <label for="email">Enter your email address</label>
+                        <input type="email" name="email" placeholder="jamie23@gmail.com" required>
+                        <span class="error">email not valid</span>
+                    </div>
+                    <div>
+                        <label for="password">Enter your password</label>
+                        <input type="password" name="password" id="passwordfield">
+                        <span class="material-icons-outlined eyeIcon">
+                            remove_red_eye
+                        </span>
+                        <a href="./forgotpassword.html" class="forgot text-right">Forgot password ?</a>
+                    </div>
 
-                <div class="button-grp">
-                    <button type="submit" class="login-btn">Login</button>
-                    <button type="submit" class="google-btn"><img src="./assets/google.svg"> Log in with
-                        Google</button>
-                </div>
-            </form>
-            <p class="text-center">Don’t have an account ? <a href="./signup.html">Sign up</a></p>
+                    <div class="button-grp">
+                        <button type="submit" class="login-btn">Login</button>
+                        <button type="submit" class="google-btn"><img src="./assets/google.svg"> Log in with
+                            Google</button>
+                    </div>
+                </form>
+                <p class="text-center">Don’t have an account ? <a href="./signup.html">Sign up</a></p>
+            </div>
         </div>
         <div class="right-img">
             <img src="./assets/loginlady.png" alt="">
