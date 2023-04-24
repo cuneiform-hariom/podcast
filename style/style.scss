@@ -22,6 +22,10 @@ body{
     padding: 0;
 }
 
+ul{
+    padding: 0;
+}
+
 li {
     list-style: none;
 }
@@ -63,7 +67,7 @@ p {
     border-radius: 100px;
     font-weight: 500;
     font-size: 13px;
-    // line-height: 28px;
+    // line-height: 2;
     color: $black;
 }
 
@@ -73,7 +77,7 @@ p {
     border-radius: 100px;
     background: linear-gradient(180deg, #01DAC1 0%, #009AD5 100%);
     box-shadow: 0px 0px 35px rgba(22, 12, 96, 0.09);
-    // line-height: 28px;
+    // line-height: 2;
     font-weight: 500;
     font-size: 13px;
     color: white;
@@ -164,15 +168,6 @@ p {
     .nav-container {
         .nav-logo img {
             width: 200px;
-        }
-
-        .login-btns {
-
-            .light-btn,
-            .dark-btn {
-                padding: 5px 30px;
-            }
-
         }
     }
 
@@ -1003,18 +998,18 @@ footer {
     }
 }
 
-.stickybar.sticky-top {
-    top: 60px;
-}
 
 .stickybar {
     padding-top: 10px;
-    background: white;
-
+    
     .pagenav {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: sticky;
+        top: 60px;
+        background: white;
+        padding: 15px 0;
 
         li a {
             font-size: 24px;

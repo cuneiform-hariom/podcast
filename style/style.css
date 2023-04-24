@@ -14,6 +14,10 @@ body {
   padding: 0;
 }
 
+ul {
+  padding: 0;
+}
+
 li {
   list-style: none;
 }
@@ -145,10 +149,6 @@ p {
 }
 .nav.small .nav-container .nav-logo img {
   width: 200px;
-}
-.nav.small .nav-container .login-btns .light-btn,
-.nav.small .nav-container .login-btns .dark-btn {
-  padding: 5px 30px;
 }
 
 .nav {
@@ -793,18 +793,17 @@ footer .copyrightbar p a {
   resize: none;
 }
 
-.stickybar.sticky-top {
-  top: 60px;
-}
-
 .stickybar {
   padding-top: 10px;
-  background: white;
 }
 .stickybar .pagenav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 60px;
+  background: white;
+  padding: 15px 0;
 }
 .stickybar .pagenav li a {
   font-size: 24px;
