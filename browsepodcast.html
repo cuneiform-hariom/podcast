@@ -28,11 +28,18 @@
                 <li><a href="listen.html" class="menu-link">Listen</a></li>
                 <li><a href="about.html" class="menu-link">About us</a></li>
             </ul>
-            <div class="logged-in">
-                <div class="loguserimg"><img src="./assets/user1.png" alt=""></div>
-                <div class="loguserinfo">
-                    <h6>Leslie Alexander</h6>
-                </div>
+            <div class="logged-in dropdown-center">
+                <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <div class="loguserimg"><img src="./assets/user1.png" alt=""></div>
+                    <div class="loguserinfo">
+                        <h6>Leslie Alexander</h6>
+                    </div>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">My Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Log Out</a></li>
+                  </ul>
             </div>
             <div class="hamburger" id="menuIcon">
                 <span></span>
@@ -40,7 +47,6 @@
                 <span></span>
             </div>
         </div>
-
 
     </header>
 
