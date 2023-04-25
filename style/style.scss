@@ -1031,6 +1031,7 @@ footer {
 .uploadpodcast {
     gap: 50px;
     align-items: center;
+    scroll-margin-top: 150px;
 
     .podthumb {
         width: 80%;
@@ -1051,10 +1052,11 @@ footer {
     }
 }
 
-// .uploadpodcast,
-// .mypodcast {
-//     padding-top: 180px;
-// }
+.uploadpodcast,
+.mypodcast,
+.playlistsection {
+    scroll-margin-top: 150px;
+}
 
 .playlistitems {
     display: flex;
@@ -1077,7 +1079,7 @@ footer {
     }
 
     .listdesc {
-        padding-right: 15%;
+        padding-right: 5px;
 
 
         h3 {
@@ -1240,7 +1242,7 @@ footer {
         width: 100%;
     }
 
-    .nav .nav-container .logged-in {
+    .nav .nav-container .logged-in button {
 
         border: none;
         padding: 0;
@@ -1307,6 +1309,71 @@ footer {
         }
 
         .right-img {
+            display: none;
+        }
+    }
+
+    // profile page 
+    .userbanner .userimage {
+        width: 100px;
+        margin-top: -50px;
+    }
+
+    .userdata form .formfields {
+        padding: 10px;
+    }
+
+    .stickybar .pagenav li a {
+        font-size: 15px;
+    }
+
+    .playlistitems {
+        gap: 5px;
+    }
+
+    .playlist {
+        padding: 10px 0;
+
+        .playlistimg {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .listdesc {
+            padding: 5px;
+
+            h3 {
+                font-size: 16px;
+            }
+
+            p {
+                font-size: 10px;
+            }
+
+            .epdata {
+
+                gap: 5px;
+
+                li {
+                    display: flex;
+
+                    i {
+                        font-size: 12px;
+                    }
+                }
+
+                span {
+                    font-size: 10px;
+                }
+
+                .listen i {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .rightbtngrp {
             display: none;
         }
     }
