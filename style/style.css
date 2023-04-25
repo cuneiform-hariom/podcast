@@ -919,10 +919,34 @@ footer .copyrightbar p a {
   visibility: visible;
 }
 
+.pod-player-sec .row {
+  align-items: center;
+}
 .pod-player-sec .pod-player {
   padding: 20px;
   border: 1px solid #815BDB;
   border-radius: 28px;
+}
+.pod-player-sec .podDetail .podTitle {
+  font-weight: 600;
+  font-size: 32px;
+  color: #3E3E3E;
+  margin: 0;
+}
+.pod-player-sec .podDetail .podartist {
+  font-weight: 500;
+  font-size: 24px;
+  color: #3E3E3E;
+}
+.pod-player-sec .podDetail .podcat {
+  font-weight: 400;
+  font-size: 24px;
+  color: #3E3E3E;
+}
+.pod-player-sec .podDetail h4 {
+  font-weight: 500;
+  font-size: 24px;
+  color: #3E3E3E;
 }
 
 @media only screen and (max-width: 992px) {

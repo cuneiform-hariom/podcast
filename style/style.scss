@@ -17,12 +17,12 @@ body {
     height: 100%;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
 }
 
-ul{
+ul {
     padding: 0;
 }
 
@@ -185,12 +185,12 @@ p {
     display: flex;
     align-items: center;
     transition: all 0.3s linear;
-    
+
     .nav-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        
+
         .nav-logo img {
             width: 250px;
             transition: all 0.3s linear;
@@ -244,7 +244,7 @@ p {
 
         }
 
-        .logged-in button{
+        .logged-in button {
             padding: 8px 10px;
             border: 1px solid #01DAC1;
             border-radius: 150px;
@@ -285,7 +285,7 @@ p {
     display: grid;
     place-content: center;
 
-    .row{
+    .row {
         align-items: center;
     }
 
@@ -769,12 +769,12 @@ footer {
                 cursor: pointer;
             }
 
-            .error{
+            .error {
                 color: red;
                 font-size: 14px;
             }
 
-            .sucess{
+            .sucess {
                 color: green;
             }
 
@@ -837,7 +837,7 @@ footer {
         img {
             height: 100vh;
             object-fit: cover;
-            
+
         }
     }
 }
@@ -1010,7 +1010,7 @@ footer {
 
 .stickybar {
     padding-top: 10px;
-    
+
     .pagenav {
         display: flex;
         justify-content: space-between;
@@ -1158,12 +1158,45 @@ footer {
 
 // podcast player page 
 
-.pod-player-sec{
+.pod-player-sec {
 
-    .pod-player{
+    .row {
+        align-items: center;
+    }
+
+    .pod-player {
         padding: 20px;
         border: 1px solid #815BDB;
         border-radius: 28px;
+    }
+
+    .podDetail {
+        .podTitle {
+            font-weight: 600;
+            font-size: 32px;
+            color: #3E3E3E;
+            margin: 0;
+        }
+
+        .podartist {
+            font-weight: 500;
+            font-size: 24px;
+            // margin: 0;
+            color: #3E3E3E;
+        }
+
+        .podcat {
+            font-weight: 400;
+            font-size: 24px;
+            color: #3E3E3E;
+        }
+
+        h4 {
+            font-weight: 500;
+            font-size: 24px;
+            color: #3E3E3E;
+        }
+
     }
 }
 
@@ -1183,7 +1216,7 @@ footer {
         display: none;
     }
 
-    .home-banner h2{
+    .home-banner h2 {
         font-size: 40px;
     }
 }
@@ -1255,7 +1288,7 @@ footer {
         padding: 20px;
     }
 
-    .home-banner{
+    .home-banner {
         height: auto;
     }
 
@@ -1265,15 +1298,15 @@ footer {
 
     // login page 
 
-    .loginpage{
+    .loginpage {
         display: grid;
         place-content: center;
 
-        .leftform{
+        .leftform {
             padding: 0 50px;
         }
 
-        .right-img{
+        .right-img {
             display: none;
         }
     }
