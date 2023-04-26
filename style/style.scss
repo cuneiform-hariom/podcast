@@ -251,7 +251,7 @@ p {
             display: flex;
             align-items: center;
             background: white;
-            // gap: 6px;
+            display: none;
 
             .loguserimg {
                 img {
@@ -1760,6 +1760,10 @@ footer {
             transform: translateY(-3px) rotate(45deg);
         }
 
+    }
+
+    .nav .nav-container .logged-in button{
+        display: flex;
     }
 
     .newsletter {
