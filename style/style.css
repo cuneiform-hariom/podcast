@@ -631,8 +631,9 @@ footer .copyrightbar p a {
   padding-right: 35px;
 }
 .loginpage .leftform .loginform .forgot {
-  display: block;
+  display: inline-block;
   text-align: right;
+  float: right;
   font-size: 14px;
 }
 .loginpage .leftform .loginform .button-grp {
@@ -928,11 +929,113 @@ footer .copyrightbar p a {
 
 .pod-player-sec .row {
   align-items: center;
+  min-height: 100vh;
+  padding-top: 100px;
 }
 .pod-player-sec .pod-player {
   padding: 20px;
   border: 1px solid #815BDB;
   border-radius: 28px;
+  padding-bottom: 30px;
+}
+.pod-player-sec .pod-player .controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+}
+.pod-player-sec .pod-player .controls .volume {
+  display: flex;
+}
+.pod-player-sec .pod-player .controls .volume input[type=range] {
+  margin-left: -5px;
+  margin-top: 10px;
+}
+.pod-player-sec .pod-player .controls .volume span {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.3764705882);
+  cursor: pointer;
+}
+.pod-player-sec .pod-player .controls .volume input[type=range] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  background: black;
+  cursor: pointer;
+  width: 30px;
+  height: 1px;
+  transform: rotate(90deg);
+}
+.pod-player-sec .pod-player .controls .volume input[type=range]::-webkit-slider-thumb {
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: #000000;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+.pod-player-sec .pod-player .controls .pod-control {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.pod-player-sec .pod-player .controls .pod-control span {
+  font-size: 25px;
+  cursor: pointer;
+}
+.pod-player-sec .pod-player .controls .pod-control .play {
+  font-size: 35px;
+}
+.pod-player-sec .pod-player .controls .pod-control .pause {
+  display: none;
+}
+.pod-player-sec .pod-player .controls .caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.pod-player-sec .pod-player .controls .caption .cap {
+  font-size: 10px;
+}
+.pod-player-sec .pod-player .controls .caption span {
+  color: rgba(0, 0, 0, 0.3764705882);
+}
+.pod-player-sec .pod-player .playrange input[type=range] {
+  height: 2px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.5019607843);
+  display: block;
+  margin: auto;
+  position: relative;
+}
+.pod-player-sec .pod-player .playrange input[type=range]:focus {
+  outline: none;
+}
+.pod-player-sec .pod-player .playrange input[type=range]::-webkit-slider-thumb {
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: #000000;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+.pod-player-sec .pod-player .playrange input[type=range]::before {
+  content: "00:00";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  font-size: 10px;
+}
+.pod-player-sec .pod-player .playrange input[type=range]::after {
+  content: "10:00";
+  position: absolute;
+  top: 100%;
+  right: 0;
+  font-size: 10px;
 }
 .pod-player-sec .podDetail .podTitle {
   font-weight: 600;
@@ -955,7 +1058,44 @@ footer .copyrightbar p a {
   font-size: 24px;
   color: #3E3E3E;
 }
+.pod-player-sec .nxtep {
+  display: flex;
+  padding: 10px;
+  gap: 20px;
+  background: linear-gradient(98.09deg, rgba(179, 234, 255, 0.5) -9.64%, rgba(76, 206, 255, 0.185) 118.4%);
+  border-radius: 8px 0px;
+  align-items: center;
+}
+.pod-player-sec .nxtep img {
+  width: 100px;
+}
+.pod-player-sec .nxtep .nxtepdetail a {
+  display: flex;
+  color: #005B8B;
+  font-weight: 600;
+}
+.pod-player-sec .nxtep .nxtepdetail .nxttitle {
+  font-weight: 500;
+  font-size: 32px;
+  color: rgba(0, 0, 0, 0.85);
+  margin-bottom: 0;
+}
+.pod-player-sec .nxtep .nxtepdetail .nxtartist {
+  font-weight: 400;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.85);
+}
 
+.uploadbanner .row {
+  height: 100vh;
+  align-items: center;
+}
+.uploadbanner .row .uploadleft img {
+  width: 60%;
+}
+.uploadbanner .row .uploadright h2 {
+  font-size: 70px;
+}
 @media only screen and (max-width: 992px) {
   .nav .nav-container .login-btns {
     display: none;
