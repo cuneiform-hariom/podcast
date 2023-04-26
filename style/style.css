@@ -1300,7 +1300,6 @@ footer .copyrightbar p a {
   padding: 10px 40px;
   border: 1px solid transparent;
   border-radius: 5px;
-  flex-wrap: wrap;
 }
 .myeplist .myeplists .singleeps img {
   width: 72px;
