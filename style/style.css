@@ -113,7 +113,7 @@ p {
 }
 
 .sec-title-2 {
-  color: #3E3E3E;
+  color: #009AD5;
   font-size: 36px;
 }
 
@@ -1096,6 +1096,248 @@ footer .copyrightbar p a {
 .uploadbanner .row .uploadright h2 {
   font-size: 70px;
 }
+.uploadbanner .row .uploadright h2 span {
+  background: radial-gradient(circle, rgb(222, 15, 255) 0%, rgb(79, 121, 227) 50%, rgb(1, 218, 193) 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+.uploadbanner .row .uploadright img {
+  width: 60%;
+}
+
+.uploadFormSec {
+  padding: 10px 0;
+}
+.uploadFormSec .uploadform form {
+  padding: 10px;
+  gap: 20px;
+  align-items: center;
+}
+.uploadFormSec .uploadform form .fileupload {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.uploadFormSec .uploadform form .fileupload input {
+  display: none;
+}
+.uploadFormSec .uploadform form .fileupload .audiofile,
+.uploadFormSec .uploadform form .fileupload .imgfile {
+  background: rgba(214, 244, 255, 0.25);
+  border: 3px dashed #01DAC1;
+  padding: 60px 10px;
+}
+.uploadFormSec .uploadform form .fileupload .audiofile label,
+.uploadFormSec .uploadform form .fileupload .imgfile label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-align: center;
+}
+.uploadFormSec .uploadform form .fileupload .audiofile label span,
+.uploadFormSec .uploadform form .fileupload .imgfile label span {
+  background: linear-gradient(180deg, rgb(1, 218, 193) 0%, rgb(0, 154, 213) 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  font-size: 70px;
+  color: transparent;
+}
+.uploadFormSec .uploadform form .uploaddetails {
+  display: flex;
+  flex-direction: column;
+}
+.uploadFormSec .uploadform form .uploaddetails label {
+  font-weight: 500;
+  font-size: 20px;
+}
+.uploadFormSec .uploadform form .uploaddetails .select .selectbox {
+  display: flex;
+  gap: 10px;
+}
+.uploadFormSec .uploadform form .uploaddetails .select .selectbox .selection {
+  flex: 3;
+  border: 1px solid rgba(0, 0, 0, 0.2745098039);
+  border-radius: 5px;
+}
+.uploadFormSec .uploadform form .uploaddetails .select .selectbox .color-btn {
+  border-radius: 5px;
+  width: 100%;
+  flex: 1;
+  font-size: 20px;
+}
+.uploadFormSec .uploadform form .uploaddetails .eptitle,
+.uploadFormSec .uploadform form .uploaddetails .desc,
+.uploadFormSec .uploadform form .uploaddetails .cate,
+.uploadFormSec .uploadform form .uploaddetails .keywords {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+.uploadFormSec .uploadform form .uploaddetails input, .uploadFormSec .uploadform form .uploaddetails select,
+.uploadFormSec .uploadform form .uploaddetails textarea {
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2745098039);
+  border-radius: 5px;
+}
+.uploadFormSec .uploadform form .uploaddetails textarea {
+  resize: none;
+}
+.uploadFormSec .uploadform form .uploaddetails .btngrp {
+  display: flex;
+  gap: 20px;
+  margin-top: 15px;
+}
+.uploadFormSec .uploadform form .uploaddetails .btngrp button {
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.newpodPopup {
+  padding: 40px;
+  background: rebeccapurple;
+}
+.newpodPopup .uploadform form {
+  padding: 10px;
+  gap: 20px;
+  align-items: center;
+}
+.newpodPopup .uploadform form .fileupload {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.newpodPopup .uploadform form .fileupload input {
+  display: none;
+}
+.newpodPopup .uploadform form .fileupload .audiofile {
+  background: rgba(214, 244, 255, 0.25);
+  border: 3px dashed #01DAC1;
+  padding: 60px 10px;
+}
+.newpodPopup .uploadform form .fileupload .audiofile label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-align: center;
+}
+.newpodPopup .uploadform form .fileupload .audiofile label span {
+  background: linear-gradient(180deg, rgb(1, 218, 193) 0%, rgb(0, 154, 213) 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  font-size: 70px;
+  color: transparent;
+}
+.newpodPopup .uploadform form .uploaddetails {
+  display: flex;
+  flex-direction: column;
+}
+.newpodPopup .uploadform form .uploaddetails label {
+  font-weight: 500;
+  font-size: 20px;
+}
+.newpodPopup .uploadform form .uploaddetails .eptitle,
+.newpodPopup .uploadform form .uploaddetails .cate {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+.newpodPopup .uploadform form .uploaddetails input,
+.newpodPopup .uploadform form .uploaddetails textarea {
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2745098039);
+  border-radius: 5px;
+}
+.newpodPopup .uploadform form .uploaddetails textarea {
+  resize: none;
+}
+.newpodPopup .uploadform form .uploaddetails .btngrp {
+  display: flex;
+  gap: 20px;
+  margin-top: 15px;
+}
+.newpodPopup .uploadform form .uploaddetails .btngrp button {
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+}
+.newpodPopup .uploadform form .uploaddetails .fileprogress {
+  margin-top: 15px;
+  padding: 10px;
+  background: rgba(218, 218, 218, 0.1647058824);
+  border: 1px solid rgba(0, 0, 0, 0.3607843137);
+  border-radius: 5px;
+}
+.newpodPopup .uploadform form .uploaddetails .fileprogress label {
+  font-size: 18px;
+  display: flex;
+  gap: 10px;
+  color: rgba(0, 0, 0, 0.6235294118);
+}
+.newpodPopup .uploadform form .uploaddetails .fileprogress progress {
+  width: 90%;
+}
+.newpodPopup .uploadform form .uploaddetails .fileprogress button {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.myeplist .myeplists {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.myeplist .myeplists .singleeps {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 40px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  flex-wrap: wrap;
+}
+.myeplist .myeplists .singleeps img {
+  width: 72px;
+  border-radius: 3px;
+}
+.myeplist .myeplists .singleeps .desc {
+  padding-right: 30px;
+}
+.myeplist .myeplists .singleeps .desc h3 {
+  font-weight: 500;
+  font-size: 20px;
+  color: #0092D5;
+}
+.myeplist .myeplists .singleeps .desc p {
+  font-size: 15px;
+  margin-bottom: 0;
+}
+.myeplist .myeplists .singleeps .btngrp {
+  display: flex;
+  gap: 15px;
+}
+.myeplist .myeplists .singleeps .btngrp button {
+  border-radius: 6px;
+  display: flex;
+  font-size: 15px;
+  gap: 5px;
+  background-color: white;
+}
+.myeplist .myeplists .singleeps .btngrp button:hover {
+  background: linear-gradient(180deg, #01DAC1 0%, #009AD5 100%);
+  color: white;
+}
+.myeplist .myeplists .singleeps:hover {
+  border: 1px solid #01DAC1;
+  background: rgba(0, 154, 213, 0.1);
+}
+
 @media only screen and (max-width: 992px) {
   .nav .nav-container .login-btns {
     display: none;
@@ -1216,6 +1458,33 @@ footer .copyrightbar p a {
   }
   .playlist .rightbtngrp {
     display: none;
+  }
+  .uploadbanner .uploadleft {
+    display: none;
+  }
+  .uploadbanner .uploadright h2 {
+    text-align: center;
+  }
+  .uploadbanner .uploadright img {
+    display: block;
+    margin: auto;
+  }
+  .uploadFormSec .uploadform form .uploaddetails .select .selectbox {
+    flex-direction: column;
+  }
+  .myeplist .myeplists .singleeps {
+    padding: 10px;
+    display: block;
+  }
+  .myeplist .myeplists .singleeps img {
+    float: left;
+    margin: 0 10px 0px 0;
+  }
+  .myeplist .myeplists .singleeps .desc {
+    padding: 0;
+  }
+  .myeplist .myeplists .singleeps .btngrp {
+    margin-top: 15px;
   }
 }
 @media (max-width: 576px) {

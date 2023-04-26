@@ -125,7 +125,7 @@ p {
 }
 
 .sec-title-2 {
-    color: #3E3E3E;
+    color: #009AD5;
     font-size: 36px;
 }
 
@@ -1382,13 +1382,306 @@ footer {
             h2 {
                 font-size: 70px;
 
-                span {}
+                span {
+                    background: radial-gradient(circle, rgba(222, 15, 255, 1) 0%, rgba(79, 121, 227, 1) 50%, rgba(1, 218, 193, 1) 100%);
+                    color: transparent;
+                    background-clip: text;
+                }
+            }
+
+            img {
+                width: 60%;
             }
         }
     }
 }
 
+.uploadFormSec {
+    padding: 10px 0;
 
+    .uploadform {
+
+        form {
+            padding: 10px;
+            gap: 20px;
+            align-items: center;
+
+            .fileupload {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+
+
+                input {
+                    display: none;
+                }
+
+                .audiofile,
+                .imgfile {
+                    background: rgba(214, 244, 255, 0.25);
+                    border: 3px dashed #01DAC1;
+                    padding: 60px 10px;
+
+                    label {
+
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                        text-align: center;
+
+                        span {
+                            background: linear-gradient(180deg, rgba(1, 218, 193, 1) 0%, rgba(0, 154, 213, 1) 100%);
+                            background-clip: text;
+                            font-size: 70px;
+                            color: transparent;
+                        }
+                    }
+                }
+            }
+
+            .uploaddetails {
+                display: flex;
+                flex-direction: column;
+
+                label {
+                    font-weight: 500;
+                    font-size: 20px;
+                }
+
+                .select {
+                    .selectbox {
+                        display: flex;
+                        gap: 10px;
+
+                        .selection {
+                            flex: 3;
+                            border: 1px solid #00000046;
+                            border-radius: 5px;
+                        }
+
+                        .color-btn {
+                            border-radius: 5px;
+                            width: 100%;
+                            flex: 1;
+                            font-size: 20px;
+                        }
+                    }
+                }
+
+                .eptitle,
+                .desc,
+                .cate,
+                .keywords {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 15px;
+                }
+
+                input,select,
+                textarea {
+                    padding: 10px;
+                    border: 1px solid #00000046;
+                    border-radius: 5px;
+                }
+
+                textarea {
+                    resize: none;
+                }
+
+                .btngrp {
+                    display: flex;
+                    gap: 20px;
+                    margin-top: 15px;
+
+                    button {
+                        width: 100%;
+                        padding: 15px;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.newpodPopup {
+    padding: 40px;
+    background: rebeccapurple;
+
+
+    .uploadform {
+
+        form {
+            padding: 10px;
+            gap: 20px;
+            align-items: center;
+
+            .fileupload {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+
+
+                input {
+                    display: none;
+                }
+
+                .audiofile {
+                    background: rgba(214, 244, 255, 0.25);
+                    border: 3px dashed #01DAC1;
+                    padding: 60px 10px;
+
+                    label {
+
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                        text-align: center;
+
+                        span {
+                            background: linear-gradient(180deg, rgba(1, 218, 193, 1) 0%, rgba(0, 154, 213, 1) 100%);
+                            background-clip: text;
+                            font-size: 70px;
+                            color: transparent;
+                        }
+                    }
+                }
+            }
+
+            .uploaddetails {
+                display: flex;
+                flex-direction: column;
+
+                label {
+                    font-weight: 500;
+                    font-size: 20px;
+                }
+
+                .eptitle,
+                .cate {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 15px;
+                }
+
+                input,
+                textarea {
+                    padding: 10px;
+                    border: 1px solid #00000046;
+                    border-radius: 5px;
+                }
+
+                textarea {
+                    resize: none;
+                }
+
+                .btngrp {
+                    display: flex;
+                    gap: 20px;
+                    margin-top: 15px;
+
+                    button {
+                        width: 100%;
+                        padding: 15px;
+                        border-radius: 5px;
+                    }
+                }
+
+                .fileprogress {
+                    margin-top: 15px;
+                    padding: 10px;
+                    background: #dadada2a;
+                    border: 1px solid #0000005c;
+                    border-radius: 5px;
+
+                    label {
+                        font-size: 18px;
+                        display: flex;
+                        gap: 10px;
+                        color: #0000009f;
+                    }
+
+                    progress {
+                        width: 90%;
+                    }
+
+                    button {
+                        border: none;
+                        outline: none;
+                        background: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.myeplist {
+
+    .myeplists {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .singleeps {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 40px;
+            border: 1px solid transparent;
+            border-radius: 5px;
+            flex-wrap: wrap;
+
+            img {
+                width: 72px;
+                border-radius: 3px;
+            }
+
+            .desc {
+                padding-right: 30px;
+
+                h3 {
+                    font-weight: 500;
+                    font-size: 20px;
+                    color: #0092D5;
+                }
+
+                p{
+                    font-size: 15px;
+                    margin-bottom: 0;
+                }
+            }
+
+            .btngrp{
+                display: flex;
+                // flex-wrap: wrap;
+                gap: 15px;
+
+                button{
+                    border-radius: 6px;
+                    display: flex;
+                    font-size: 15px;
+                    gap: 5px;
+                    background-color: white;
+
+                    &:hover{
+                        background: linear-gradient(180deg, #01DAC1 0%, #009AD5 100%);
+                        color: white;
+                    }
+                }
+            }
+
+            &:hover{
+                border: 1px solid #01DAC1;
+                background: rgba(0, 154, 213, 0.1);
+            }
+        }
+    }
+}
 
 
 
@@ -1558,6 +1851,48 @@ footer {
 
         .rightbtngrp {
             display: none;
+        }
+    }
+
+    // upload page 
+
+    .uploadbanner{
+        .uploadleft{
+            display: none;
+        }
+
+        .uploadright{
+            h2{
+                text-align: center;
+            }
+
+            img{
+                display: block;
+                margin: auto;
+            }
+        }
+    }
+
+    .uploadFormSec .uploadform form .uploaddetails .select .selectbox{
+        flex-direction: column;
+    }
+
+    .myeplist .myeplists .singleeps{
+        padding: 10px;
+        display: block;
+        
+        img{
+            float: left;
+            margin: 0 10px 0px 0;
+        }
+
+        .desc{
+            padding: 0;
+        }
+
+
+        .btngrp{
+            margin-top: 15px;
         }
     }
 }
