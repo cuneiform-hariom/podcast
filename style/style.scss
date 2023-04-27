@@ -244,28 +244,31 @@ p {
 
         }
 
-        .logged-in button {
-            padding: 8px 10px;
-            border: 1px solid #01DAC1;
-            border-radius: 150px;
-            display: flex;
-            align-items: center;
-            background: white;
+        .logged-in {
             display: none;
 
-            .loguserimg {
-                img {
-                    width: 30px;
-                    border-radius: 50%;
-                    border: 2px solid #009AD5;
+            button {
+                padding: 8px 10px;
+                border: 1px solid #01DAC1;
+                border-radius: 150px;
+                display: flex;
+                align-items: center;
+                background: white;
+
+                .loguserimg {
+                    img {
+                        width: 30px;
+                        border-radius: 50%;
+                        border: 2px solid #009AD5;
+                    }
                 }
-            }
 
-            .loguserinfo {
+                .loguserinfo {
 
-                h6 {
-                    margin-bottom: 0;
-                    margin-left: 6px;
+                    h6 {
+                        margin-bottom: 0;
+                        margin-left: 6px;
+                    }
                 }
             }
         }
@@ -1014,7 +1017,7 @@ footer {
 
     .pagenav {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         position: sticky;
         top: 60px;
@@ -1479,7 +1482,8 @@ footer {
                     margin-top: 15px;
                 }
 
-                input,select,
+                input,
+                select,
                 textarea {
                     padding: 10px;
                     border: 1px solid #00000046;
@@ -1650,34 +1654,66 @@ footer {
                     color: #0092D5;
                 }
 
-                p{
+                p {
                     font-size: 15px;
                     margin-bottom: 0;
                 }
             }
 
-            .btngrp{
+            .btngrp {
                 display: flex;
                 // flex-wrap: wrap;
                 gap: 15px;
 
-                button{
+                button {
                     border-radius: 6px;
                     display: flex;
                     font-size: 15px;
                     gap: 5px;
                     background-color: white;
 
-                    &:hover{
+                    &:hover {
                         background: linear-gradient(180deg, #01DAC1 0%, #009AD5 100%);
                         color: white;
                     }
                 }
             }
 
-            &:hover{
+            &:hover {
                 border: 1px solid #01DAC1;
                 background: rgba(0, 154, 213, 0.1);
+            }
+        }
+    }
+}
+
+// profile section page 
+
+.unkdetail {
+    padding: 30px 0;
+
+    .unkuserimg {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border: 5px solid #01DAC1;
+        display: block;
+        margin: auto;
+        border-radius: 15px;
+        margin-top: -20%;
+    }
+
+    .unkudata {
+
+        h3 {
+            color: #061020;
+            font-weight: 500;
+            font-size: 20px;
+        }
+        
+        p{
+            span{
+                color: #061020;                
             }
         }
     }
@@ -1762,7 +1798,7 @@ footer {
 
     }
 
-    .nav .nav-container .logged-in button{
+    .nav .nav-container .logged-in button {
         display: flex;
     }
 
@@ -1801,6 +1837,15 @@ footer {
 
     .userdata form .formfields {
         padding: 10px;
+    }
+
+    .unkdetail .unkuserimg{
+        width: 100px;
+        height: 100px;
+    }
+
+    .unkdetail .unkudata{
+        padding: 20px;
     }
 
     .stickybar .pagenav li a {
@@ -1860,42 +1905,42 @@ footer {
 
     // upload page 
 
-    .uploadbanner{
-        .uploadleft{
+    .uploadbanner {
+        .uploadleft {
             display: none;
         }
 
-        .uploadright{
-            h2{
+        .uploadright {
+            h2 {
                 text-align: center;
             }
 
-            img{
+            img {
                 display: block;
                 margin: auto;
             }
         }
     }
 
-    .uploadFormSec .uploadform form .uploaddetails .select .selectbox{
+    .uploadFormSec .uploadform form .uploaddetails .select .selectbox {
         flex-direction: column;
     }
 
-    .myeplist .myeplists .singleeps{
+    .myeplist .myeplists .singleeps {
         padding: 10px;
         display: block;
-        
-        img{
+
+        img {
             float: left;
             margin: 0 10px 0px 0;
         }
 
-        .desc{
+        .desc {
             padding: 0;
         }
 
 
-        .btngrp{
+        .btngrp {
             margin-top: 15px;
         }
     }

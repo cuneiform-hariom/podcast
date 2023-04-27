@@ -211,6 +211,9 @@ p {
   display: flex;
   gap: 15px;
 }
+.nav .nav-container .logged-in {
+  display: none;
+}
 .nav .nav-container .logged-in button {
   padding: 8px 10px;
   border: 1px solid #01DAC1;
@@ -218,7 +221,6 @@ p {
   display: flex;
   align-items: center;
   background: white;
-  display: none;
 }
 .nav .nav-container .logged-in button .loguserimg img {
   width: 30px;
@@ -808,7 +810,7 @@ footer .copyrightbar p a {
 }
 .stickybar .pagenav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   position: sticky;
   top: 60px;
@@ -1177,7 +1179,8 @@ footer .copyrightbar p a {
   flex-direction: column;
   margin-top: 15px;
 }
-.uploadFormSec .uploadform form .uploaddetails input, .uploadFormSec .uploadform form .uploaddetails select,
+.uploadFormSec .uploadform form .uploaddetails input,
+.uploadFormSec .uploadform form .uploaddetails select,
 .uploadFormSec .uploadform form .uploaddetails textarea {
   padding: 10px;
   border: 1px solid rgba(0, 0, 0, 0.2745098039);
@@ -1338,6 +1341,29 @@ footer .copyrightbar p a {
   background: rgba(0, 154, 213, 0.1);
 }
 
+.unkdetail {
+  padding: 30px 0;
+}
+.unkdetail .unkuserimg {
+  width: 300px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 5px solid #01DAC1;
+  display: block;
+  margin: auto;
+  border-radius: 15px;
+  margin-top: -20%;
+}
+.unkdetail .unkudata h3 {
+  color: #061020;
+  font-weight: 500;
+  font-size: 20px;
+}
+.unkdetail .unkudata p span {
+  color: #061020;
+}
+
 @media only screen and (max-width: 992px) {
   .nav .nav-container .login-btns {
     display: none;
@@ -1420,6 +1446,13 @@ footer .copyrightbar p a {
   }
   .userdata form .formfields {
     padding: 10px;
+  }
+  .unkdetail .unkuserimg {
+    width: 100px;
+    height: 100px;
+  }
+  .unkdetail .unkudata {
+    padding: 20px;
   }
   .stickybar .pagenav li a {
     font-size: 15px;
