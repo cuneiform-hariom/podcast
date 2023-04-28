@@ -129,6 +129,12 @@ p {
     font-size: 36px;
 }
 
+.abt-sec-title {
+    font-weight: 400;
+    font-size: 30px;
+    color: #008E7E;
+}
+
 .sec-btn {
     font-weight: 500;
     font-size: 16px;
@@ -1710,17 +1716,177 @@ footer {
             font-weight: 500;
             font-size: 20px;
         }
-        
-        p{
-            span{
-                color: #061020;                
+
+        p {
+            span {
+                color: #061020;
             }
         }
     }
 }
 
+// about page 
+
+.abt {
+    padding: 50px;
+
+    .row {
+        align-items: center;
+
+        .abtright {
+            h2 {
+                font-size: 48px;
+                font-weight: 700;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 14px;
+                color: #3E3E3E;
+
+                &:nth-child(3) {
+                    padding-right: 60px;
+                }
+            }
+        }
+
+        .fetcontainer {
+            padding: 25px 0;
+        }
+    }
+}
+
+.service {
+
+    .s-desc {
+        max-width: 300px;
+        margin: auto;
+        color: #3E3E3E;
+        font-size: 14px;
+    }
+
+    .servgrid {
+        padding: 40px 0;
+        gap: 60px;
+
+        .singleserv {
+            background: #CCFFF9;
+            padding: 40px;
+
+            h3 {
+                font-size: 24px;
+                color: #000;
+                padding-left: 20px;
+            }
+
+            p {
+                color: #3E3E3E;
+                font-size: 14px;
+            }
+        }
 
 
+    }
+}
+
+.acheivement {
+
+    .achgrid {
+        padding: 40px 0;
+        gap: 30px;
+
+        .singleacs {
+            padding: 25px;
+            border: 1px solid #C4C4C4;
+            border-radius: 6px;
+
+            .icontitle {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                margin-bottom: 10px;
+                padding-left: 15px;
+
+                .ico {
+                    width: 40px;
+                    height: 40px;
+                    display: grid;
+                    place-content: center;
+                    background-color: #99FFF3;
+                    border-radius: 4px;
+
+                    img {
+                        width: 22px;
+                    }
+
+                }
+
+                h3 {
+                    font-size: 20px;
+                    color: #000;
+                    margin-bottom: 0;
+                }
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+// contact page 
+
+.contact {
+    margin-top: 150px;
+    margin-bottom: 50px;
+
+    .contactBox {
+        background-color: #F6FBFE;
+
+        .row {
+            align-items: center;
+
+            .contactForm {
+                padding: 40px;
+
+                form {
+                    display: flex;
+                    flex-direction: column;
+
+                    .inpfields {
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 10px;
+
+                        input,
+                        textarea {
+                            border: 1.5px solid #CCCCCC;
+                            border-radius: 8px;
+                            resize: none;
+                            outline: none;
+                            padding: 5px 15px;
+                        }
+
+                    }
+
+                    button {
+                        background: linear-gradient(93.84deg, #009AD5 -1.16%, #01DAC1 104.45%);
+                        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+                        border-radius: 8px;
+                        color: white;
+                        width: 100%;
+                        border: none;
+                        outline: none;
+                        display: flex;
+                        justify-content: center;
+                        padding: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 // ----------------responsive css------------------
@@ -1839,12 +2005,12 @@ footer {
         padding: 10px;
     }
 
-    .unkdetail .unkuserimg{
+    .unkdetail .unkuserimg {
         width: 100px;
         height: 100px;
     }
 
-    .unkdetail .unkudata{
+    .unkdetail .unkudata {
         padding: 20px;
     }
 

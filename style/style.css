@@ -117,6 +117,12 @@ p {
   font-size: 36px;
 }
 
+.abt-sec-title {
+  font-weight: 400;
+  font-size: 30px;
+  color: #008E7E;
+}
+
 .sec-btn {
   font-weight: 500;
   font-size: 16px;
@@ -1362,6 +1368,131 @@ footer .copyrightbar p a {
 }
 .unkdetail .unkudata p span {
   color: #061020;
+}
+
+.abt {
+  padding: 50px;
+}
+.abt .row {
+  align-items: center;
+}
+.abt .row .abtright h2 {
+  font-size: 48px;
+  font-weight: 700;
+}
+.abt .row .abtright p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #3E3E3E;
+}
+.abt .row .abtright p:nth-child(3) {
+  padding-right: 60px;
+}
+.abt .row .fetcontainer {
+  padding: 25px 0;
+}
+
+.service .s-desc {
+  max-width: 300px;
+  margin: auto;
+  color: #3E3E3E;
+  font-size: 14px;
+}
+.service .servgrid {
+  padding: 40px 0;
+  gap: 60px;
+}
+.service .servgrid .singleserv {
+  background: #CCFFF9;
+  padding: 40px;
+}
+.service .servgrid .singleserv h3 {
+  font-size: 24px;
+  color: #000;
+  padding-left: 20px;
+}
+.service .servgrid .singleserv p {
+  color: #3E3E3E;
+  font-size: 14px;
+}
+
+.acheivement .achgrid {
+  padding: 40px 0;
+  gap: 30px;
+}
+.acheivement .achgrid .singleacs {
+  padding: 25px;
+  border: 1px solid #C4C4C4;
+  border-radius: 6px;
+}
+.acheivement .achgrid .singleacs .icontitle {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-left: 15px;
+}
+.acheivement .achgrid .singleacs .icontitle .ico {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-content: center;
+  background-color: #99FFF3;
+  border-radius: 4px;
+}
+.acheivement .achgrid .singleacs .icontitle .ico img {
+  width: 22px;
+}
+.acheivement .achgrid .singleacs .icontitle h3 {
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 0;
+}
+.acheivement .achgrid .singleacs p {
+  font-size: 14px;
+}
+
+.contact {
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+.contact .contactBox {
+  background-color: #F6FBFE;
+}
+.contact .contactBox .row {
+  align-items: center;
+}
+.contact .contactBox .row .contactForm {
+  padding: 40px;
+}
+.contact .contactBox .row .contactForm form {
+  display: flex;
+  flex-direction: column;
+}
+.contact .contactBox .row .contactForm form .inpfields {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.contact .contactBox .row .contactForm form .inpfields input,
+.contact .contactBox .row .contactForm form .inpfields textarea {
+  border: 1.5px solid #CCCCCC;
+  border-radius: 8px;
+  resize: none;
+  outline: none;
+  padding: 5px 15px;
+}
+.contact .contactBox .row .contactForm form button {
+  background: linear-gradient(93.84deg, #009AD5 -1.16%, #01DAC1 104.45%);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  color: white;
+  width: 100%;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
 }
 
 @media only screen and (max-width: 992px) {
