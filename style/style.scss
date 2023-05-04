@@ -1889,6 +1889,115 @@ footer {
 }
 
 
+// privacy policy page 
+
+.ppcontent {
+
+    .datetitle {
+        color: #008E7E;
+        font-weight: 500;
+        font-size: 36px;
+    }
+
+    .conttitle {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        img {
+            width: 30px;
+        }
+    }
+
+    .pplist {
+        li {
+            list-style: disc;
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+    }
+}
+
+// create profile 
+
+.createprofile {
+    background: url(../assets/cpbg.png);
+    background-size: cover;
+    min-height: 100vh;
+    padding: 50px 0;
+
+    .profiletitle {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+        .lefttitle {
+            h5 {
+                font-weight: 700;
+                font-size: 20px;
+                color: #00D2C7;
+            }
+
+            h2{
+                color: white;
+            }
+        }
+
+        .profileimg{
+            img{
+                width: 130px;
+                height: 130px;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    .cpForm{
+        margin: 20px;
+
+        .grid-2{
+            column-gap: 40px;
+            row-gap: 20px;
+
+            .abt {
+                grid-row-end: span 2;
+                padding: 0;
+            }
+            
+            .inpfield{
+                display: flex;
+                flex-direction: column;
+                
+                label{
+                    color: white;
+                }
+                
+                input,select,textarea{
+                    resize: none;
+                    padding: 10px;
+                    background: transparent;
+                    outline: none;
+                    border: 1px solid #00D2C7;
+                    border-radius: 8px;
+                    color: white;
+
+                }
+            }
+
+            option{
+                color: black;
+            }
+        }
+
+        button{
+            float: right;
+            margin-top: 10px;
+        }
+    }
+}
+
+
 // ----------------responsive css------------------
 
 @media only screen and (max-width: 992px) {
@@ -2130,6 +2239,10 @@ footer {
         .featBox .listenbtns {
             flex-direction: column;
         }
+    }
+
+    .createprofile .profiletitle{
+        flex-direction: column;
     }
 
 

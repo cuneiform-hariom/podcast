@@ -1495,6 +1495,87 @@ footer .copyrightbar p a {
   padding: 15px;
 }
 
+.ppcontent .datetitle {
+  color: #008E7E;
+  font-weight: 500;
+  font-size: 36px;
+}
+.ppcontent .conttitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.ppcontent .conttitle img {
+  width: 30px;
+}
+.ppcontent .pplist li {
+  list-style: disc;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.createprofile {
+  background: url(../assets/cpbg.png);
+  background-size: cover;
+  min-height: 100vh;
+  padding: 50px 0;
+}
+.createprofile .profiletitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.createprofile .profiletitle .lefttitle h5 {
+  font-weight: 700;
+  font-size: 20px;
+  color: #00D2C7;
+}
+.createprofile .profiletitle .lefttitle h2 {
+  color: white;
+}
+.createprofile .profiletitle .profileimg img {
+  width: 130px;
+  height: 130px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+.createprofile .cpForm {
+  margin: 20px;
+}
+.createprofile .cpForm .grid-2 {
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  row-gap: 20px;
+}
+.createprofile .cpForm .grid-2 .abt {
+  grid-row-end: span 2;
+  padding: 0;
+}
+.createprofile .cpForm .grid-2 .inpfield {
+  display: flex;
+  flex-direction: column;
+}
+.createprofile .cpForm .grid-2 .inpfield label {
+  color: white;
+}
+.createprofile .cpForm .grid-2 .inpfield input, .createprofile .cpForm .grid-2 .inpfield select, .createprofile .cpForm .grid-2 .inpfield textarea {
+  resize: none;
+  padding: 10px;
+  background: transparent;
+  outline: none;
+  border: 1px solid #00D2C7;
+  border-radius: 8px;
+  color: white;
+}
+.createprofile .cpForm .grid-2 option {
+  color: black;
+}
+.createprofile .cpForm button {
+  float: right;
+  margin-top: 10px;
+}
+
 @media only screen and (max-width: 992px) {
   .nav .nav-container .login-btns {
     display: none;
@@ -1666,6 +1747,9 @@ footer .copyrightbar p a {
     font-size: 36px;
   }
   .home-banner .featBox .listenbtns {
+    flex-direction: column;
+  }
+  .createprofile .profiletitle {
     flex-direction: column;
   }
 }
