@@ -1378,7 +1378,8 @@ footer {
 .uploadbanner {
 
     .row {
-        height: 100vh;
+        // height: 100vh;
+        padding: 100px 0;
         align-items: center;
 
         .uploadleft {
@@ -1429,7 +1430,7 @@ footer {
                 .imgfile {
                     background: rgba(214, 244, 255, 0.25);
                     border: 3px dashed #01DAC1;
-                    padding: 60px 10px;
+                    padding: 76px 10px;
 
                     label {
 
@@ -1465,7 +1466,7 @@ footer {
                         gap: 10px;
 
                         .selection {
-                            flex: 3;
+                            flex: 2;
                             border: 1px solid #00000046;
                             border-radius: 5px;
                         }
@@ -1758,6 +1759,11 @@ footer {
 
 .service {
 
+    h2 {
+        font-size: 48px;
+        font-weight: 700;
+    }
+
     .s-desc {
         max-width: 300px;
         margin: auto;
@@ -1776,7 +1782,7 @@ footer {
             h3 {
                 font-size: 24px;
                 color: #000;
-                padding-left: 20px;
+                // padding-left: 20px;
             }
 
             p {
@@ -1790,6 +1796,10 @@ footer {
 }
 
 .acheivement {
+    h2 {
+        font-size: 48px;
+        font-weight: 700;
+    }
 
     .achgrid {
         padding: 40px 0;

@@ -1096,7 +1096,7 @@ footer .copyrightbar p a {
 }
 
 .uploadbanner .row {
-  height: 100vh;
+  padding: 100px 0;
   align-items: center;
 }
 .uploadbanner .row .uploadleft img {
@@ -1135,7 +1135,7 @@ footer .copyrightbar p a {
 .uploadFormSec .uploadform form .fileupload .imgfile {
   background: rgba(214, 244, 255, 0.25);
   border: 3px dashed #01DAC1;
-  padding: 60px 10px;
+  padding: 76px 10px;
 }
 .uploadFormSec .uploadform form .fileupload .audiofile label,
 .uploadFormSec .uploadform form .fileupload .imgfile label {
@@ -1167,7 +1167,7 @@ footer .copyrightbar p a {
   gap: 10px;
 }
 .uploadFormSec .uploadform form .uploaddetails .select .selectbox .selection {
-  flex: 3;
+  flex: 2;
   border: 1px solid rgba(0, 0, 0, 0.2745098039);
   border-radius: 5px;
 }
@@ -1392,6 +1392,10 @@ footer .copyrightbar p a {
   padding: 25px 0;
 }
 
+.service h2 {
+  font-size: 48px;
+  font-weight: 700;
+}
 .service .s-desc {
   max-width: 300px;
   margin: auto;
@@ -1409,13 +1413,16 @@ footer .copyrightbar p a {
 .service .servgrid .singleserv h3 {
   font-size: 24px;
   color: #000;
-  padding-left: 20px;
 }
 .service .servgrid .singleserv p {
   color: #3E3E3E;
   font-size: 14px;
 }
 
+.acheivement h2 {
+  font-size: 48px;
+  font-weight: 700;
+}
 .acheivement .achgrid {
   padding: 40px 0;
   gap: 30px;
