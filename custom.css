@@ -1,0 +1,26 @@
+.topicgrid .categoryTitles{
+    border-radius: 15px;
+    padding: 70px 10px 40px 30px;
+}
+
+.topicgrid .categoryTitles h2{
+    font-size: 32px;
+    font-weight: 500;
+    color: white;
+}
+
+.topicgrid .categoryTitles:nth-child(odd){
+    background: linear-gradient(127.29deg, #00D2C7 3.14%, #408CC0 102.8%), url(./Ball.png);
+    background-blend-mode: color;
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.topicgrid .categoryTitles:nth-child(even){
+    background: linear-gradient(127.29deg, #00D2C7 3.14%, #408CC0 102.8%), url(./Ball2.png);
+    background-blend-mode: color;
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+}
