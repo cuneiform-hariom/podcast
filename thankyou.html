@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            font-family: 'Rubik', sans-serif;
+        }
+
+        .thankPopup {
+            max-width: 600px;
+            width: 100%;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            order: 1px solid red;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            border-radius: 5px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s linear;
+        }
+
+
+        .thankPopup.show{
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .thankPopup .cls {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            border: none;
+            outline: none;
+            border-radius: 100px;
+        }
+
+        .thankPopup .leftimg {
+            background: linear-gradient(97.04deg, rgba(1, 218, 193, 0.061) -0.71%, rgba(0, 154, 213, 0.1) 53.81%);
+            display: grid;
+            place-content: center;
+        }
+
+        .thankPopup .rightcont {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .thankPopup .rightcont .thankmsg h3 {
+            font-size: 30px;
+            margin: 10px;
+            color: #00D2C7;
+        }
+
+        .thankPopup .rightcont .thankmsg h2 {
+            font-size: 22px;
+            margin: 0;
+        }
+
+        .thankPopup .rightcont .thankmsg p {
+            font-size: 15px;
+        }
+
+        .thankPopup .rightcont .accbtn button {
+            background: linear-gradient(127.29deg, #00D2C7 3.14%, #408CC0 102.8%);
+            color: white;
+            outline: none;
+            border: none;
+            padding: 10px 40px;
+            border-radius: 100px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <button id="openpp">ThankYou Popup</button>
+
+    <div class="thankPopup">
+        <button class="cls">x</button>
+        <div class="leftimg">
+            <img src="./assets/logo.svg" alt="">
+        </div>
+        <div class="rightcont">
+            <div class="thankmsg">
+                <h3>High Five!</h3>
+                <h2>Your podcast has been uploaded.</h2>
+                <p>Welcome to podcast.Now you can manage your playlist from your account.</p>
+            </div>
+            <div class="accbtn">
+                <button>Manage Podcast</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        const openpopup = document.getElementById('openpp');
+        const popup = document.querySelector(".thankPopup");
+        const clspopup = document.querySelector(".cls");
+        
+        openpopup.addEventListener("click", popupopen);
+        
+        function popupopen() {
+            popup.classList.add("show");
+        }
+
+        clspopup.addEventListener("click", popupclose);
+
+        function popupclose() {
+            popup.classList.remove("show");
+        }
+
+
+    </script>
+</body>
+
+</html>
