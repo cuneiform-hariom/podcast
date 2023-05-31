@@ -1583,6 +1583,12 @@ footer .copyrightbar p a {
   margin-top: 10px;
 }
 
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 90%;
+    padding: 0 100px;
+  }
+}
 @media only screen and (max-width: 992px) {
   .nav .nav-container .login-btns {
     display: none;
